@@ -9,4 +9,6 @@
 - GitHub议题：Huggingface/transformers：内存优化讨论；langchain-ai/langchain：与新LLM的集成问题；pytorch/pytorch：CUDA操作的性能改进；vllm-project/vllm：吞吐量优化挑战；Stability-AI/stablediffusion：图像质量提升
 - 新星项目：microsoft/autogen：促进LLM协同工作的框架；e2b-dev/awesome-ai-agents：AI代理精选列表；continuedev/continue：AI驱动开发的VS Code扩展；Significant-Gravitas/AutoGPT：最早获得普及的AI代理之一；hwchase17/langchain：基于语言模型开发应用的框架；lm-sys/FastChat：训练、服务和评估大型语言模型的开放平台；abetlen/llama-cpp-python：llama.cpp的Python绑定；fishaudio/Bert-VITS2：文本转语音训练和推理；PKU-YuanGroup/Open-Sora-Plan：开源视频生成模型；gaia-x/AILIB：欧洲AI库倡议
 
-详见 data-report/2026-02-13_insight.md 获取详细分析。
+详见以下报告获取详细分析：
+- 英文版: data-report/2026-02-13_insight_en.md
+- 中文版: data-report/2026-02-13_insight_zh.md
