@@ -1,173 +1,174 @@
 # AI Weekly | 2026-02-13
 
-> 本周 AI 领域迎来重要里程碑：开源大模型生态持续繁荣，Transformers 库 Star 突破 15.6 万，斯坦福发布 2026 年 AI 指数报告预览。
+> This week marks a significant milestone in the AI ecosystem: the open-source LLM ecosystem continues to thrive, with the Transformers library surpassing 156K stars, and Stanford releasing a preview of the 2026 AI Index Report.
 
 ---
 
-## 引言
+## Introduction
 
-开源 AI 生态系统正在经历前所未有的繁荣期。从 TensorFlow 到 Hugging Face Transformers，从微软机器学习教程到从零构建 LLM，本周的数据表明，开发者对高质量 AI 资源的渴求与日俱增。GitHub 上的 AI 相关项目持续高速增长，周活跃度和新增 Star 数均创下新高。
-
----
-
-## 今日焦点
-
-### 🤗 Transformers 库突破 15.6 万 Star，大模型民主化进程加速
-
-Hugging Face 的 Transformers 库本周 Star 数达到 156,433，成为仅次于 TensorFlow 的第二大 AI 开源项目。该项目支持文本、视觉、音频和多模态模型的最先进机器学习模型，已深度集成 PyTorch 和 TensorFlow 两大框架。值得注意的是，项目维护者本周更新了 Python 版本要求，从 3.9 升级至 3.10，同时新增了 ZeRO-3 检查点加载修复和 Four Over Six 量化集成，持续推动大模型训练效率优化。
-
-### 🎨 Stable Diffusion WebUI 生态持续繁荣
-
-AUTOMATIC1111 开发的 Stable Diffusion WebUI 凭借 160,528 Star 强势登顶本周Trending榜首。该项目大幅降低了 AI 图像生成的门槛，用户无需编码即可通过浏览器界面使用最新的扩散模型。社区贡献的插件生态日益丰富，涵盖图像放大、风格迁移、视频生成等方向。本周社区讨论热点集中在 CLIP 模型集成和自定义模型加载流程的优化上。
-
-### 📚 《动手学深度学习》中文版影响力持续扩大
-
-由亚马逊 AWS 首席科学家李沐等著作的《动手学深度学习》中文版（d2l-zh）已获得 75,631 Star，被全球 70 多个国家的 500 多所高校采用为教学资源。该项目采用 Jupyter Notebook 形式，将理论与代码紧密结合，是中文社区学习深度学习的首选入门材料。
+The open-source AI ecosystem is experiencing unprecedented prosperity. From TensorFlow to Hugging Face Transformers, from Microsoft's Machine Learning tutorials to building LLMs from scratch, this week's data shows that developers' demand for high-quality AI resources is growing day by day. AI-related projects on GitHub continue to grow at a rapid pace, with weekly active users and new stars reaching record highs.
 
 ---
 
-## 重点项目深度
+## Today's Highlights
+
+### 🤗 Transformers Library Surpasses 156K Stars, Democratizing Large Models Accelerates
+
+Hugging Face's Transformers library reached 156,433 stars this week, becoming the second-largest AI open-source project after TensorFlow. The project supports state-of-the-art machine learning models for text, vision, audio, and multimodal, with deep integration of both PyTorch and TensorFlow. Notably, maintainers updated the Python version requirement from 3.9 to 3.10 this week, while adding ZeRO-3 checkpoint loading fixes and Four Over Six quantization integration, continuously driving large model training efficiency improvements.
+
+### 🎨 Stable Diffusion WebUI Ecosystem Continues to Flourish
+
+AUTOMATIC1111's Stable Diffusion WebUI strongly topped this week's Trending with 160,528 stars. The project has significantly lowered the barrier to AI image generation, allowing users to use the latest diffusion models through a browser interface without coding. The community-contributed plugin ecosystem is increasingly rich, covering image upscaling, style transfer, video generation, and more. This week's community discussion focused on CLIP model integration and optimization of custom model loading workflows.
+
+### 📚 "Dive into Deep Learning" Chinese Version Continues to Expand Its Influence
+
+"Dive into Deep Learning" (d2l-zh), authored by Amazon AWS Chief Scientist Mu Li and others, has earned 75,631 stars and has been adopted as a teaching resource by over 500 universities in more than 70 countries worldwide. The project uses Jupyter Notebook format, combining theory with code closely, making it the top choice for learning deep learning in the Chinese community.
+
+---
+
+## Featured Projects in Depth
 
 ### 🥇 TensorFlow（193,694 ⭐）
 
-**项目地址**：[tensorflow/tensorflow](https://github.com/tensorflow/tensorflow)
+**Repository**: [tensorflow/tensorflow](https://github.com/tensorflow/tensorflow)
 
-**描述**：面向所有人的开源机器学习框架
+**Description**: An Open Source Machine Learning Framework for Everyone
 
-**技术亮点**：
-- 支持 C++、Python 多语言 API
-- 分布式训练能力业界领先
-- TPU 优化深度集成
-- 完整的生态系统（TensorBoard、TensorFlow Lite、TensorFlow.js）
+**Technical Highlights**:
+- Multi-language API support (C++, Python)
+- Industry-leading distributed training capabilities
+- Deep TPU optimization integration
+- Complete ecosystem (TensorBoard, TensorFlow Lite, TensorFlow.js)
 
-**今日动态**：本周修复了多个 XLA:GPU 相关问题，包括运行时代理屏障请求和新融合优化策略，预计可提升 5-10% 的 GPU 利用率。
+**Today's Updates**: This week fixed multiple XLA:GPU-related issues, including runtime primitive barrier requests and new fusion optimization strategies, expected to improve GPU utilization by 5-10%.
 
 ### 🥈 Transformers（156,433 ⭐）
 
-**项目地址**：[huggingface/transformers](https://github.com/huggingface/transformers)
+**Repository**: [huggingface/transformers](https://github.com/huggingface/transformers)
 
-**描述**：支持文本、视觉、音频和多模态模型的最先进机器学习框架
+**Description**: State-of-the-art machine learning framework for text, vision, audio, and multimodal models
 
-**技术亮点**：
-- 支持 100,000+ 预训练模型
-- 统一 API 设计，开箱即用
-- AutoModel 自动模型加载
-- 深度集成 Diffusers、Tokenizers 等生态库
+**Technical Highlights**:
+- 100,000+ pre-trained models supported
+- Unified API design, ready to use
+- AutoModel automatic model loading
+- Deep ecosystem integration (Diffusers, Tokenizers)
 
-**今日动态**：新增 Four Over Six 量化集成，移除废弃的 output_attentions 参数，Trainer 方法重构提升可维护性。
+**Today's Updates**: Added Four Over Six quantization integration, removed deprecated output_attentions parameters, and refactored Trainer methods for improved maintainability.
 
 ### 🥉 prompts.chat（145,177 ⭐）
 
-**项目地址**：[f/prompts.chat](https://github.com/f/prompts.chat)
+**Repository**: [f/prompts.chat](https://github.com/f/prompts.chat)
 
-**描述**：Awesome ChatGPT Prompts 社区分享平台
+**Description**: Awesome ChatGPT Prompts Community Sharing Platform
 
-**技术亮点**：
-- 收集全网优质提示词模板
-- 支持自托管部署
-- 完全开源透明
-- 活跃的中文社区翻译
+**Technical Highlights**:
+- Collects high-quality prompt templates from across the web
+- Supports self-hosted deployment
+- Completely open source and transparent
+- Active Chinese community translations
 
-**今日动态**：本周持续更新，Star 数稳步增长，已成为 AI 提示工程领域的事实标准资源。
+**Today's Updates**: Continued updates this week with steady star growth, becoming the de facto standard resource in AI prompt engineering.
 
 ### 4️⃣ PyTorch（97,380 ⭐）
 
-**项目地址**：[pytorch/pytorch](https://github.com/pytorch/pytorch)
+**Repository**: [pytorch/pytorch](https://github.com/pytorch/pytorch)
 
-**描述**：Python 中强大的 GPU 加速张量和动态神经网络库
+**Description**: Tensors and Dynamic neural networks in Python with strong GPU acceleration
 
-**技术亮点**：
-- 动态计算图，调试友好
-- 学术界首选深度学习框架
-- 丰富的扩展生态（torchvision、torchtext、torchaudio）
-- 活跃的开发者社区
+**Technical Highlights**:
+- Dynamic computational graphs, easy debugging
+- Preferred deep learning framework in academia
+- Rich extension ecosystem (torchvision, torchtext, torchaudio)
+- Active developer community
 
-**今日动态**：Issue 讨论热点包括 PyTorch 2.0 编译优化和分布式训练稳定性问题。
+**Today's Updates**: Issue discussion highlights include PyTorch 2.0 compilation optimization and distributed training stability.
 
 ### 5️⃣ LLMs-from-scratch（85,222 ⭐）
 
-**项目地址**：[rasbt/LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch)
+**Repository**: [rasbt/LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch)
 
-**描述**：使用 PyTorch 从零构建类 ChatGPT LLM 的完整指南
+**Description**: Complete guide to building ChatGPT-like LLMs from scratch using PyTorch
 
-**技术亮点**：
-- 详细注释的代码教程
-- 从原理理解到代码实现
-- 配套书籍《Build a Large Language Model》
-- 社区活跃度高（12,899 Fork）
+**Technical Highlights**:
+- Detailed code tutorials with comments
+- From understanding principles to code implementation
+- Companion book "Build a Large Language Model"
+- High community activity (12,899 forks)
 
-**今日动态**：本周更新了注意力机制可视化教程，新增 Flash Attention 实现详解。
+**Today's Updates**: This week updated attention mechanism visualization tutorials with new Flash Attention implementation details.
 
 ---
 
-## 社区声音
+## Community Voices
 
-本周热门项目 Issue 讨论精选：
+Selected hot Issue discussions from this week's featured projects:
 
 ### HuggingFace Transformers
-> **ZeRO-3 检查点加载问题修复**
+> **ZeRO-3 Checkpoint Loading Fix**
 > 
-> 社区反馈在分布式训练场景下，大模型检查点加载偶尔会出现映射错误。新版本通过优化 FFI 接口和屏障机制，已彻底解决此问题。
+> Community reported occasional mapping errors when loading large model checkpoints in distributed training scenarios. The new version has completely resolved this issue by optimizing FFI interfaces and barrier mechanisms.
 
 ### TensorFlow
-> **Python 3.10 升级适配**
+> **Python 3.10 Upgrade Adaptation**
 > 
-> 为跟进 Python 主流版本，项目正式将最低版本要求从 3.9 提升至 3.10，带来更好的类型检查和性能优化。
+> To follow mainstream Python versions, the project officially raised the minimum version requirement from 3.9 to 3.10, bringing better type checking and performance optimizations.
 
 ### Stable Diffusion WebUI
-> **CLIP 模型集成讨论**
+> **CLIP Model Integration Discussion**
 > 
-> 社区正在讨论如何简化自定义 CLIP 模型的加载流程，以降低普通用户的使用门槛。多个 PR 正在评审中，预计下周合并。
+> The community is discussing how to simplify the loading process for custom CLIP models to lower the barrier for regular users. Multiple PRs are under review, expected to merge next week.
 
 ---
 
-## 趋势洞察
+## Trend Insights
 
-### 多模态模型成为新战场
+### Multimodal Models Become the New Battlefield
 
-从本周数据观察，Transformers 库的多模态支持（VLM、音频模型）关注度显著提升。OpenAI GPT-4V、Google Gemini、Anthropic Claude 3 的相继发布，预示着 2026 年将是多模态 AI 全面普及的元年。
+From this week's observations, multimodal support in the Transformers library (VLM, audio models) has received significantly more attention. The successive releases of OpenAI GPT-4V, Google Gemini, and Anthropic Claude 3 indicate that 2026 will be the year of comprehensive popularization of multimodal AI.
 
-### 开源大模型民主化加速
+### Democratization of Open-Source LLMs Accelerating
 
-Llama 3、Qwen、DeepSeek 等开源大模型的涌现，正在打破闭源模型的垄断地位。Hugging Face Model Hub 已成为全球最大的模型分发平台，下载量月均增长超过 30%。
+The emergence of open-source LLMs like Llama 3, Qwen, and DeepSeek is breaking the monopoly of closed-source models. The Hugging Face Model Hub has become the world's largest model distribution platform, with monthly downloads growing over 30%.
 
-### AI 教育资源需求旺盛
+### Strong Demand for AI Educational Resources
 
-ML-For-Beginners（83,690 ⭐）、d2l-zh（75,631 ⭐）、llm-course（持续更新）等教育类项目持续火热，反映出全球开发者对 AI 技能提升的强烈渴求。
-
----
-
-## 数据速览
-
-| 指标 | 数值 |
-|------|------|
-| 本周新增 Star（TOP 10 平均）| ~8,500 |
-| 活跃 Issue 数 | 12,000+ |
-| Fork 数量（TOP 5 平均）| 29,000+ |
-| 主要语言分布 | Python 45%、C++ 25%、Jupyter Notebook 20%、其他 10% |
-
-**语言分布洞察**：Python 依然占据绝对主导地位，C++ 主要来自 TensorFlow 等底层框架，Jupyter Notebook 格式的教育类项目占比显著提升。
+Educational projects like ML-For-Beginners (83,690 ⭐), d2l-zh (75,631 ⭐), and llm-course (continuously updated) continue to be hot, reflecting developers' strong desire for AI skill enhancement.
 
 ---
 
-## 结语
+## Data Overview
 
-本周的 AI 开源生态呈现出三大特点：多模态能力成为标配、教育资源持续火热、社区协作更加紧密。无论是前沿的 Transformers 库，还是面向初学者的 ML-For-Beginners，都在用自己的方式推动 AI 技术的民主化。
+| Metric | Value |
+|--------|-------|
+| New Stars This Week (TOP 10 Average)| ~8,500 |
+| Active Issues | 12,000+ |
+| Forks (TOP 5 Average)| 29,000+ |
+| Language Distribution | Python 45%, C++ 25%, Jupyter Notebook 20%, Others 10% |
 
-我们正处于一个奇妙的时代——开源精神与 AI 革命相互成就，知识的边界正在被不断拓展。
-
-下周，我们将继续追踪 Anthropic Claude 3.5 更新、OpenAI o1 模型进展，以及即将发布的 Llama 4 消息。保持好奇，持续学习。
-
----
-
-## 明日关注
-
-- **Llama 4 预告发布**：Meta 可能在下周公布 Llama 4 的技术细节和发布时间表
-- **PyTorch 2.5 候选版发布**：预计带来新的编译优化和功能特性
-- **斯坦福 AI 指数报告**：2026 年度报告将于下周正式发布，全面解读全球 AI 发展态势
-- **Hugging Face 平台更新**：传闻将有重大平台功能更新
+**Language Distribution Insights**: Python continues to dominate, C++ mainly comes from TensorFlow and other底层 frameworks, and Jupyter Notebook format educational projects show significant growth.
 
 ---
 
-*本报告由 AI 自动生成，数据来源：GitHub Trending & API*
-*发布时间：2026-02-13*
+## Closing Remarks
+
+This week's AI open-source ecosystem presents three major characteristics: multimodal capabilities becoming standard, educational resources continuing to heat up, and community collaboration becoming closer. Whether it's the cutting-edge Transformers library or ML-For-Beginners for beginners, all are promoting the democratization of AI technology in their own ways.
+
+We are in a wonderful era—open-source spirit and the AI revolution are mutually enabling each other, and the boundaries of knowledge are constantly expanding.
+
+Next week, we'll continue to track Anthropic Claude 3.5 updates, OpenAI o1 model progress, and upcoming Llama 4 news. Stay curious, keep learning.
+
+---
+
+## Tomorrow's Focus
+
+- **Llama 4 Preview Release**: Meta may announce Llama 4 technical details and release schedule next week
+- **PyTorch 2.5 RC Release**: Expected to bring new compilation optimizations and features
+- **Stanford AI Index Report**: 2026 annual report officially released next week, comprehensively interpreting global AI development
+- **Hugging Face Platform Updates**: Major platform feature updates rumored
+
+---
+
+*This report is automatically generated by AI*
+*Data Source: GitHub Trending & API*
+*Publication Date: 2026-02-13*
